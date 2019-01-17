@@ -2,6 +2,7 @@ body{
     margin: 0;
     display: block;
     height: 100vh;
+    overflow: hidden;
 }
 
 .cover{
@@ -175,16 +176,36 @@ nav{
     align-items:center;
     display: flex;
     background-color: rgb(116, 0, 0);
-    position: sticky;
-    top: 0;
 }
 
 main{
-    background-color:black;
-    display: grid;
-    grid-gap: 2vh;
-    grid-template-columns: 20vw auto 20vw;
-    grid-template-rows: 2vh 5vh 20vh 20vh;
+}
+
+.posts{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/test.jpg)
+}
+
+.post{
+    background-color: white;
+    grid-area: posts;
+    width: 60vw;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-style: solid;
+    border-color: black;
+    border-width: 1vh;
+}
+
+.Pmaintitle{
+    margin-top: 5vh;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
 }
 
 @media only screen and (min-device-width: 480px){
