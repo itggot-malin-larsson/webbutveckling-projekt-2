@@ -22,6 +22,12 @@ let change= document.getElementById("a")
 change.classList.add("changea")
 }
 
+function enablescroll(event){
+    let enablescroll= document.querySelector(".wrapper")
+    enablescroll.classList.add("enablescroll")
+}
+
+
  
 
    

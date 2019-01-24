@@ -1,8 +1,6 @@
 body{
     margin: 0;
     display: block;
-    height: 100vh;
-    overflow: hidden;
 }
 
 .cover{
@@ -24,6 +22,10 @@ body{
     "subheading"
     "button";
     z-index: 1000000;
+}
+
+.page1 main{
+    background: url(../img/greystripes.png)
 }
 
 .title{
@@ -111,15 +113,17 @@ h2{
     grid-template-columns: 100vw;
     grid-template-rows: 100vh;
     grid-template-areas: 
-    "page1"
+    "page1";
+    overflow: hidden;
 }
 
 .page1{
     grid-area: page1;
     z-index: 1; 
+    background: url(../img/snowflakes.jpg);
 }
 
-.page2, .page1{
+.page3, .page2, .page1{
     display: grid;
     grid-template-rows: 20vh 10vh auto 20vh;
 }
@@ -151,6 +155,8 @@ h2{
     height: 8vh;
     border-radius: 5%;
     color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1rem;
 }
 
 
@@ -164,6 +170,7 @@ header{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: 'Dancing Script', cursive;
 }
 
 h1,h2{
@@ -178,15 +185,12 @@ nav{
     background-color: rgb(116, 0, 0);
 }
 
-main{
-}
 
-.posts{
-    background-color: black;
+.posts, .recipes{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: url(../img/test.jpg)
+
 }
 
 .post{
@@ -199,13 +203,64 @@ main{
     border-style: solid;
     border-color: black;
     border-width: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe{
+    background-color: white;
+    grid-area: posts;
+    width: 94vw;
+    height: 20vh;
+    margin-top: 2vh;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 0.3vh;
+    align-items: center;
+}
+
+.recipecontent{
+    display: flex;
+    margin: 1vh;
+}
+
+.page2{
+    background: url(../img/page2backg.jpg);
+}
+
+.page3{
+    background: url(../img/snowflakes.jpg)
 }
 
 .Pmaintitle{
     margin-top: 5vh;
-    color: white;
+    color:white;
     font-family: 'Dancing Script', cursive;
     font-size: 4rem;
+}
+
+.Ptitle{
+    font-size: 1rem;
+    font-family: 'Dancing Script', cursive;
+    margin: 1vh;
+}
+
+.Psubtitle{
+    font-size: 1rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.enablescroll{
+overflow: visible;
+}
+
+.hidecover{
+    transform: translateY(-110%);
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 @media only screen and (min-device-width: 480px){
