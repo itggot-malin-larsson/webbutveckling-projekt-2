@@ -125,7 +125,7 @@ h2{
 
 .page3, .page2, .page1{
     display: grid;
-    grid-template-rows: 20vh 10vh auto 20vh;
+    grid-template-rows: 20vh 10vh auto;
 }
 
 .changen{
@@ -186,7 +186,7 @@ nav{
 }
 
 
-.posts, .recipes{
+.posts, .recipes, .wishlist{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -197,7 +197,7 @@ nav{
     background-color: white;
     grid-area: posts;
     width: 60vw;
-    height: 90vh;
+    height: 65vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
     border-style: solid;
@@ -208,16 +208,26 @@ nav{
     align-items: center;
 }
 
+.Pmaintext{
+    margin: 5vh 3vw 0 3vw;
+    font-family: 'Dancing Script', cursive;
+}
+
 .recipe{
     background-color: white;
     grid-area: posts;
     width: 94vw;
-    height: 20vh;
     margin-top: 2vh;
     border-style: solid;
     border-color: lightgray;
     border-width: 0.3vh;
     align-items: center;
+    margin-bottom: 2vh;
+}
+
+ul{
+    margin-right: 2vw;
+    color: white;
 }
 
 .recipecontent{
@@ -230,14 +240,20 @@ nav{
 }
 
 .page3{
-    background: url(../img/snowflakes.jpg)
+    background: url(../img/christmastree.jpg);
+    
 }
 
-.Pmaintitle{
+
+.Maintitle1, .Maintitle2, .Maintitle3{
     margin-top: 5vh;
     color:white;
     font-family: 'Dancing Script', cursive;
     font-size: 4rem;
+}
+
+.Maintitle1{
+    color: black;
 }
 
 .Ptitle{
@@ -270,5 +286,14 @@ overflow: visible;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    }
+    
+    .recipe:hover{
+    transform: scale(1.05);
+    }
+
+    nav{
+    position: sticky;
+    top: 0;
     }
 }
